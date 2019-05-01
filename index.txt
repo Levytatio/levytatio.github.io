@@ -30,14 +30,14 @@
                             </a>
                         </h1>
                     </div>
-                    <ul class="header-links list-reset m-0">
+                    <!--<ul class="header-links list-reset m-0">
                         <li>
                             <a href="#">Login</a>
                         </li>
                         <li>
                             <a class="button button-sm button-shadow" href="#">Signup</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </header>

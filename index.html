@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|PT+Serif:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://js.stripe.com/v3"></script>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -30,14 +31,14 @@
                             </a>
                         </h1>
                     </div>
-                    <ul class="header-links list-reset m-0">
+                    <!--<ul class="header-links list-reset m-0">
                         <li>
                             <a href="#">Login</a>
                         </li>
                         <li>
                             <a class="button button-sm button-shadow" href="#">Signup</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </header>
@@ -48,10 +49,9 @@
                     <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing">Get your personalized Udemy learning plan.</h1>
                         <p class="hero-paragraph is-revealing"> You have a carreer in mind ? We create a personalized learning plan using Udemy courses.</p>
-                        <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" href="#">Get started now</a></p>
+                        <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" href=#pricing>Get started now</a></p>
                         <div class="hero-media">
-                                <iframe width="800" height="400" src="https://www.youtube.com/embed/K_t4hqSKwE4" frameborder="0" allowfullscreen></iframe>
-                        </div>
+                                <iframe width="800" height="400" src="https://www.youtube.com/embed/K_t4hqSKwE4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
                     </div>
                 </div>
             </section>
@@ -265,17 +265,244 @@
                     </div>
                 </div>
             </section> 
-            <section class="pricing section">
+            <section  class="pricing section"> 
                 <div class="container">
-                    <div class="pricing-inner section-inner has-top-divider">
+                    <div class="pricing-inner section-inner has-top-divider"> <a name="pricing"></a>
                         <h2 class="section-title mt-0 text-center">Pricing</h2>
-                        <div class="pricing-tables-wrap">
+                        <div class="pricing-tables-wrap">         
                             <div class="pricing-table is-revealing">
                                 <div class="pricing-table-inner">
                                     <div class="pricing-table-main">
                                         <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-secondary">Lorem ipsum</div>
-                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">29</span></div>
+                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Mad Data Scientist</div>
+                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">5</span></div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mb-56">
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Programming for data science</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Machine learning</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Deep Learning</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Artificial Intelligence</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta">
+                                            <a class="button button-primary button-block"  id="checkout-button-sku_EyomtDMkIe2RjH" role="link">get started now</a>
+                                          <div id="error-message"></div>
+                                          <script>
+                                            var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
+                                          
+                                            var checkoutButton = document.getElementById('checkout-button-sku_EyomtDMkIe2RjH');
+                                            checkoutButton.addEventListener('click', function () {
+                                              // When the customer clicks on the button, redirect
+                                              // them to Checkout.
+                                              stripe.redirectToCheckout({
+                                                items: [{sku: 'sku_EyomtDMkIe2RjH', quantity: 1}],
+                                          
+                                                // Note that it is not guaranteed your customers will be redirected to this
+                                                // URL *100%* of the time, it's possible that they could e.g. close the
+                                                // tab between form submission and the redirect.
+                                                successUrl: 'https://your-website.com/success',
+                                                cancelUrl: 'https://your-website.com/canceled',
+                                              })
+                                              .then(function (result) {
+                                                if (result.error) {
+                                                  // If `redirectToCheckout` fails due to a browser or network
+                                                  // error, display the localized error message to your customer.
+                                                  var displayError = document.getElementById('error-message');
+                                                  displayError.textContent = result.error.message;
+                                                }
+                                              });
+                                            });
+                                          </script>       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-table is-revealing">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header">
+                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Artsy Designer</div>
+                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">5</span></div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mb-56">
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Drawing basics</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Experience User Design</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Web Design</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Photoshop Retouching</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta">
+                                        
+                                            <a class="button button-primary button-block"  id="checkout-button-sku_Eyom43layiRzMR" role="link">get started now</a>
+    
+                                          <div id="error-message"></div>
+                                          
+                                          <script>
+                                            var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
+                                          
+                                            var checkoutButton = document.getElementById('checkout-button-sku_Eyom43layiRzMR');
+                                            checkoutButton.addEventListener('click', function () {
+                                              // When the customer clicks on the button, redirect
+                                              // them to Checkout.
+                                              stripe.redirectToCheckout({
+                                                items: [{sku: 'sku_Eyom43layiRzMR', quantity: 1}],
+                                          
+                                                // Note that it is not guaranteed your customers will be redirected to this
+                                                // URL *100%* of the time, it's possible that they could e.g. close the
+                                                // tab between form submission and the redirect.
+                                                successUrl: 'https://your-website.com/success',
+                                                cancelUrl: 'https://your-website.com/canceled',
+                                              })
+                                              .then(function (result) {
+                                                if (result.error) {
+                                                  // If `redirectToCheckout` fails due to a browser or network
+                                                  // error, display the localized error message to your customer.
+                                                  var displayError = document.getElementById('error-message');
+                                                  displayError.textContent = result.error.message;
+                                                }
+                                              });
+                                            });
+                                          </script>        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-table is-revealing">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header">
+                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Marketing Ninja</div>
+                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">5</span></div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mb-56">
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Digital Marketink</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Marketing strategy</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Facebook and Instagram Marketing</span>
+                                            </li>
+                                            <li>
+                                                <span class="list-icon">
+                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Google & SEO</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta">
+                                            <a class="button button-primary button-block" id="checkout-button-sku_EyooSzn1yXnhWd" role="link" >Get started now</a>
+                                          
+                                            <div id="error-message"></div>
+                                            
+                                            <script>
+                                              var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
+                                            
+                                              var checkoutButton = document.getElementById('checkout-button-sku_EyooSzn1yXnhWd');
+                                              checkoutButton.addEventListener('click', function () {
+                                                // When the customer clicks on the button, redirect
+                                                // them to Checkout.
+                                                stripe.redirectToCheckout({
+                                                  items: [{sku: 'sku_EyooSzn1yXnhWd', quantity: 1}],
+                                            
+                                                  // Note that it is not guaranteed your customers will be redirected to this
+                                                  // URL *100%* of the time, it's possible that they could e.g. close the
+                                                  // tab between form submission and the redirect.
+                                                  successUrl: 'https://your-website.com/success',
+                                                  cancelUrl: 'https://your-website.com/canceled',
+                                                })
+                                                .then(function (result) {
+                                                  if (result.error) {
+                                                    // If `redirectToCheckout` fails due to a browser or network
+                                                    // error, display the localized error message to your customer.
+                                                    var displayError = document.getElementById('error-message');
+                                                    displayError.textContent = result.error.message;
+                                                  }
+                                                });
+                                              });
+                                            </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-table is-revealing">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header">
+                                            <div class="pricing-table-title mt-12 mb-16 text-secondary">Choose your path</div>
+                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">29.99</span></div>
                                         </div>
                                         <ul class="pricing-table-features list-reset text-xs mb-56">
                                             <li>
@@ -284,7 +511,7 @@
                                                         <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                                     </svg>
                                                 </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
+                                                <span>Tell us exactly what you want to learn</span>
                                             </li>
                                             <li>
                                                 <span class="list-icon">
@@ -292,161 +519,28 @@
                                                         <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                                     </svg>
                                                 </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
+                                                <span>Verified courses</span>
                                             </li>
+                                            <li>
+                                                    <span class="list-icon">
+                                                        <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
+                                                        </svg>
+                                                    </span>
+                                                    <span>2 times plan revision</span>
+                                                </li>
                                             <li>
                                                 <span class="list-icon">
                                                     <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00C6A7" fill-rule="nonzero"/>
                                                     </svg>
                                                 </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
+                                                <span>Free Supplementary Learning Ressources </span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="pricing-table-cta">
-                                        <a class="button button-secondary button-block" href="#">Get started now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricing-table is-revealing">
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Lorem ipsum</div>
-                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">129</span></div>
-                                        </div>
-                                        <ul class="pricing-table-features list-reset text-xs mb-56">
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-cta">
-                                        <a class="button button-primary button-block" href="#">Get started now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricing-table is-revealing">
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Lorem ipsum</div>
-                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">129</span></div>
-                                        </div>
-                                        <ul class="pricing-table-features list-reset text-xs mb-56">
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-cta">
-                                        <a class="button button-primary button-block" href="#">Get started now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricing-table is-revealing">
-                                <div class="pricing-table-inner">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Lorem ipsum</div>
-                                            <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">129</span></div>
-                                        </div>
-                                        <ul class="pricing-table-features list-reset text-xs mb-56">
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                            <li>
-                                                <span class="list-icon">
-                                                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M14.3.3L5 9.6 1.7 6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4 4c.2.2.4.3.7.3.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z" fill="#00A2B8" fill-rule="nonzero"/>
-                                                    </svg>
-                                                </span>
-                                                <span>Sed do eiusmod tempor cesa.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="pricing-table-cta">
-                                        <a class="button button-primary button-block" href="#">Get started now</a>
+                                        <a class="button button-secondary button-block">Available Soon</a>
                                     </div>
                                 </div>
                             </div>
