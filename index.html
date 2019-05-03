@@ -356,7 +356,7 @@ mixpanel.init("3ed3a2a50cf937182e341a1e65469887");</script><!-- end Mixpanel -->
                                 <div class="pricing-table-inner">
                                     <div class="pricing-table-main">
                                         <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Artsy Designer</div>
+                                            <div class="pricing-table-title mt-12 mb-16 text-primary">Pro Designer</div>
                                             <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3">$</span><span class="pricing-table-price-amount h1">5</span></div>
                                         </div>
                                         <ul class="pricing-table-features list-reset text-xs mb-56">
@@ -405,9 +405,10 @@ mixpanel.init("3ed3a2a50cf937182e341a1e65469887");</script><!-- end Mixpanel -->
                                           
                                             var checkoutButton = document.getElementById('checkout-button-sku_Eyom43layiRzMR');
                                             checkoutButton.addEventListener('click', function () {
+                                                mixpanel.track("Artsy Designer checkout");
                                               // When the customer clicks on the button, redirect
                                               // them to Checkout.
-                                              mixpanel.track("Artsy Designer checkout"); 
+                                               
                                               stripe.redirectToCheckout({
                                                 items: [{sku: 'sku_Eyom43layiRzMR', quantity: 1}],
                                           
@@ -482,10 +483,10 @@ mixpanel.init("3ed3a2a50cf937182e341a1e65469887");</script><!-- end Mixpanel -->
                                             
                                               var checkoutButton = document.getElementById('checkout-button-sku_EyooSzn1yXnhWd');
                                               checkoutButton.addEventListener('click', function () {
-                                                  
+                                                mixpanel.track("Marketing Ninja checkout");
                                                 // When the customer clicks on the button, redirect
                                                 // them to Checkout.
-                                                mixpanel.track("Marketing Ninja checkout"); 
+                                                 
                                                 stripe.redirectToCheckout({
                                                   items: [{sku: 'sku_EyooSzn1yXnhWd', quantity: 1}],
                                             
