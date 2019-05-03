@@ -407,6 +407,7 @@ mixpanel.init("3ed3a2a50cf937182e341a1e65469887");</script><!-- end Mixpanel -->
                                             checkoutButton.addEventListener('click', function () {
                                               // When the customer clicks on the button, redirect
                                               // them to Checkout.
+                                              mixpanel.track("Artsy Designer checkout"); 
                                               stripe.redirectToCheckout({
                                                 items: [{sku: 'sku_Eyom43layiRzMR', quantity: 1}],
                                           
@@ -484,6 +485,7 @@ mixpanel.init("3ed3a2a50cf937182e341a1e65469887");</script><!-- end Mixpanel -->
                                                   
                                                 // When the customer clicks on the button, redirect
                                                 // them to Checkout.
+                                                mixpanel.track("Marketing Ninja checkout"); 
                                                 stripe.redirectToCheckout({
                                                   items: [{sku: 'sku_EyooSzn1yXnhWd', quantity: 1}],
                                             
