@@ -58,6 +58,7 @@ img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 	vertical-align: middle;
+
 }
 
 figure {
@@ -100,3 +101,10 @@ td {
 		padding-right: 0;
 	}
 }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
