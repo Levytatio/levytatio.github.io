@@ -321,19 +321,19 @@
                                     </div>
                                     <div class="pricing-table-cta">
                                         
-                                            <a class="button button-primary button-block"  id="checkout-button-sku_F1Qpap6sbee8bO" role="link">get started now</a><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. --><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-                                            
+                                            <a class="button button-primary button-block"  id="checkout-button-sku_F1QqWOkU1yXICB" role="link">get started now</a><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. --><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. --><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                                           
                                             <div id="error-message"></div>
                                             
                                             <script>
                                               var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
                                             
-                                              var checkoutButton = document.getElementById('checkout-button-sku_F1Qpap6sbee8bO');
+                                              var checkoutButton = document.getElementById('checkout-button-sku_F1QqWOkU1yXICB');
                                               checkoutButton.addEventListener('click', function () {
                                                 // When the customer clicks on the button, redirect
                                                 // them to Checkout.
                                                 stripe.redirectToCheckout({
-                                                  items: [{sku: 'sku_F1Qpap6sbee8bO', quantity: 1}],
+                                                  items: [{sku: 'sku_F1QqWOkU1yXICB', quantity: 1}],
                                             
                                                   // Note that it is not guaranteed your customers will be redirected to this
                                                   // URL *100%* of the time, it's possible that they could e.g. close the
@@ -396,40 +396,36 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="pricing-table-cta">
-                                            <a class="button button-primary button-block" id="checkout-button-sku_EyooSzn1yXnhWd" role="link" >Get started now</a>
-                                          
-                                            <div id="error-message"></div>
+                                    <div class="pricing-table-cta"><a class="button button-primary button-block"  id="checkout-button-sku_F1Qpap6sbee8bO" role="link">get started now</a><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. --><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
                                             
-                                            <script>
-                                              var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
-                                            
-                                              var checkoutButton = document.getElementById('checkout-button-sku_EyooSzn1yXnhWd');
-                                              checkoutButton.addEventListener('click', function () {
-                                                mixpanel.track("Marketing Ninja checkout");
-                                                // When the customer clicks on the button, redirect
-                                                // them to Checkout.
-                                                 
-                                                stripe.redirectToCheckout({
-                                                  items: [{sku: 'sku_EyooSzn1yXnhWd', quantity: 1}],
-                                            
-                                                  // Note that it is not guaranteed your customers will be redirected to this
-                                                  // URL *100%* of the time, it's possible that they could e.g. close the
-                                                  // tab between form submission and the redirect.
-                                                  successUrl: 'https://your-website.com/success',
-                                                  cancelUrl: 'https://your-website.com/canceled',
-                                                
-                                                })
-                                                .then(function (result) {
-                                                  if (result.error) {
-                                                    // If `redirectToCheckout` fails due to a browser or network
-                                                    // error, display the localized error message to your customer.
-                                                    var displayError = document.getElementById('error-message');
-                                                    displayError.textContent = result.error.message;
-                                                  }
-                                                });
-                                              });
-                                            </script>
+                                        <div id="error-message"></div>
+                                        
+                                        <script>
+                                          var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
+                                        
+                                          var checkoutButton = document.getElementById('checkout-button-sku_F1Qpap6sbee8bO');
+                                          checkoutButton.addEventListener('click', function () {
+                                            // When the customer clicks on the button, redirect
+                                            // them to Checkout.
+                                            stripe.redirectToCheckout({
+                                              items: [{sku: 'sku_F1Qpap6sbee8bO', quantity: 1}],
+                                        
+                                              // Note that it is not guaranteed your customers will be redirected to this
+                                              // URL *100%* of the time, it's possible that they could e.g. close the
+                                              // tab between form submission and the redirect.
+                                              successUrl: 'https://levytatio.github.io/success',
+                                              cancelUrl: 'https://levytatio.github.io/canceled',
+                                            })
+                                            .then(function (result) {
+                                              if (result.error) {
+                                                // If `redirectToCheckout` fails due to a browser or network
+                                                // error, display the localized error message to your customer.
+                                                var displayError = document.getElementById('error-message');
+                                                displayError.textContent = result.error.message;
+                                              }
+                                            });
+                                          });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
