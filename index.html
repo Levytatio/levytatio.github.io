@@ -71,8 +71,8 @@
                         <p class="hero-paragraph is-revealing"> Do you have a career in mind? We create a personalized learning plan using Udemy courses.</p>
                         <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" href=#pricing>Get started now</a></p>
                         <div >
-                        <div class="hero-media">
-                                <P style="text-align:center"> <img src="img\hero2.jpg"  width="600"  height="400"  > </P>
+                        <div class="hero-media" height=500px>
+                                <img src="img\hero2.jpg"  width="440"  style="margin: 0 auto" >
                         </div>         
                 </div>
             </section>
@@ -242,36 +242,43 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="pricing-table-cta">
-                                            <a class="button button-primary button-block"  id="checkout-button-sku_EyomtDMkIe2RjH" role="link">get started now</a>
-                                          <div id="error-message"></div>
-                                          <script>
-                                            var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
-                                          
-                                            var checkoutButton = document.getElementById('checkout-button-sku_EyomtDMkIe2RjH');
-                                            checkoutButton.addEventListener('click', function () {
-                                                mixpanel.track("Mad Scientis checkout"); 
-                                              // When the customer clicks on the button, redirect
-                                              // them to Checkout.
-                                              stripe.redirectToCheckout({
-                                                items: [{sku: 'sku_EyomtDMkIe2RjH', quantity: 1}],
-                                          
-                                                // Note that it is not guaranteed your customers will be redirected to this
-                                                // URL *100%* of the time, it's possible that they could e.g. close the
-                                                // tab between form submission and the redirect.
-                                                successUrl: 'https://your-website.com/success',
-                                                cancelUrl: 'https://your-website.com/canceled',
-                                              })
-                                              .then(function (result) {
-                                                if (result.error) {
-                                                  // If `redirectToCheckout` fails due to a browser or network
-                                                  // error, display the localized error message to your customer.
-                                                  var displayError = document.getElementById('error-message');
-                                                  displayError.textContent = result.error.message;
-                                                }
-                                              });
+                                    <div class="pricing-table-cta"><!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                                        <button
+                                          style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                                          id="checkout-button-sku_F1QpZMQyufSUb3"
+                                          role="link"
+                                        >
+                                          Checkout
+                                        </button>
+                                        
+                                        <div id="error-message"></div>
+                                        
+                                        <script>
+                                          var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
+                                        
+                                          var checkoutButton = document.getElementById('checkout-button-sku_F1QpZMQyufSUb3');
+                                          checkoutButton.addEventListener('click', function () {
+                                            // When the customer clicks on the button, redirect
+                                            // them to Checkout.
+                                            stripe.redirectToCheckout({
+                                              items: [{sku: 'sku_F1QpZMQyufSUb3', quantity: 1}],
+                                        
+                                              // Note that it is not guaranteed your customers will be redirected to this
+                                              // URL *100%* of the time, it's possible that they could e.g. close the
+                                              // tab between form submission and the redirect.
+                                              successUrl: 'https://levytatio.github.io/success',
+                                              cancelUrl: 'https://levytatio.github.io/canceled',
+                                            })
+                                            .then(function (result) {
+                                              if (result.error) {
+                                                // If `redirectToCheckout` fails due to a browser or network
+                                                // error, display the localized error message to your customer.
+                                                var displayError = document.getElementById('error-message');
+                                                displayError.textContent = result.error.message;
+                                              }
                                             });
-                                          </script>       
+                                          });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +331,7 @@
                                           <div id="error-message"></div>
                                           
                                           <script>
-                                            var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
+                                            var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
                                           
                                             var checkoutButton = document.getElementById('checkout-button-sku_Eyom43layiRzMR');
                                             checkoutButton.addEventListener('click', function () {
@@ -402,7 +409,7 @@
                                             <div id="error-message"></div>
                                             
                                             <script>
-                                              var stripe = Stripe('pk_test_RkHApjuaHRVYgEnRJDSbbFVg00pJkZufMp');
+                                              var stripe = Stripe('pk_live_OrgG3ooZpRWZXArIBdSS0B2g00vdFeoCVb');
                                             
                                               var checkoutButton = document.getElementById('checkout-button-sku_EyooSzn1yXnhWd');
                                               checkoutButton.addEventListener('click', function () {
