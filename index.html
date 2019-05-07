@@ -32,6 +32,7 @@
 
 </head>
 <body class="is-boxed has-animations">
+    <script> mixpanel.track("visit") </script>
     <div class="body-wrap boxed-container">
         <header class="site-header">
             <div class="container">
@@ -129,7 +130,7 @@
                                     <img src="img\choix3.png" alt="Simply Easy Learning" width="480"  height="320">                                
                             </div>
                             <div class="feature-extended-body">
-                                <h3 class="mt-0">Choose your path</h3>
+                                <h3 class="mt-0" style="font-family: 'Roboto', sans-serif;">Choose your path</h3>
                                 <p> A Marketing Ninja? A FullStack Web Developer? A Profitable Dropshipper? </p>
                             </div>
                         </div>
@@ -254,11 +255,12 @@
                                         
                                           var checkoutButton = document.getElementById('checkout-button-sku_F1QpZMQyufSUb3');
                                           checkoutButton.addEventListener('click', function () {
+                                            mixpanel.track("Checkout DataScientist");
                                             // When the customer clicks on the button, redirect
                                             // them to Checkout.
                                             stripe.redirectToCheckout({
                                               items: [{sku: 'sku_F1QpZMQyufSUb3', quantity: 1}],
-                                        
+                                           
                                               // Note that it is not guaranteed your customers will be redirected to this
                                               // URL *100%* of the time, it's possible that they could e.g. close the
                                               // tab between form submission and the redirect.
@@ -331,6 +333,7 @@
                                             
                                               var checkoutButton = document.getElementById('checkout-button-sku_F1QqWOkU1yXICB');
                                               checkoutButton.addEventListener('click', function () {
+                                                mixpanel.track("Checkout Designer");
                                                 // When the customer clicks on the button, redirect
                                                 // them to Checkout.
                                                 stripe.redirectToCheckout({
@@ -406,6 +409,7 @@
                                         
                                           var checkoutButton = document.getElementById('checkout-button-sku_F1Qpap6sbee8bO');
                                           checkoutButton.addEventListener('click', function () {
+                                            mixpanel.track("Marketing Checkout");
                                             // When the customer clicks on the button, redirect
                                             // them to Checkout.
                                             stripe.redirectToCheckout({
@@ -434,7 +438,7 @@
                                 <div class="pricing-table-inner">
                                     <div class="pricing-table-main">
                                         <div class="pricing-table-header">
-                                            <div class="pricing-table-title mt-12 mb-16 text-secondary">Choose your path</div>
+                                            <div class="pricing-table-title mt-12 mb-16 text-secondary" >Choose your path</div>
                                             <div class="pricing-table-price mb-24 pb-32"><span class="pricing-table-price-currency h3" style="font-family: 'Roboto', sans-serif;">$</span><span class="pricing-table-price-amount h1" style="font-family: 'Roboto', sans-serif;">29.99</span></div>
                                         </div>
                                         <ul class="pricing-table-features list-reset text-xs mb-56">
