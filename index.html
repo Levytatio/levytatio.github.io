@@ -71,7 +71,7 @@
                     <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing" style="font-family: 'Roboto', sans-serif;">Get your personalized Udemy learning program.</h1>
                         <p class="hero-paragraph is-revealing"> Do you have a career in mind? We create a personalized learning plan using Udemy courses.</p>
-                        <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" href=#pricing>Get started now</a></p>
+                        <p class="hero-cta is-revealing"><a id="getStartedButton" class="button button-secondary button-shadow" href=#pricing>Get started now <script> getElementById(getStartedButton).addEventListener("click", function(){ mixpanel.track("clickOnGetStarted") });</script></a></p>
                         <div >
                         <div class="hero-media" height=500px>
                                 <img src="img\hero2.jpg"  width="440"  style="margin: 0 auto" >
@@ -478,6 +478,7 @@
                                     </div>
                                     <div class="pricing-table-cta">
                                         <a class="button button-secondary button-block">Available Soon</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -485,8 +486,7 @@
                     </div>
                 </div>
             </section>
-        </main>
-
+        </main>  
         <footer class="site-footer">
             <div class="container">
                 <div class="site-footer-inner">
